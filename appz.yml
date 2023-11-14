@@ -5,13 +5,13 @@ app:
 
 build:
   version: 0.3
-  env: QA2
+  env: DEV
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
 
 deploy:
-  context: alpha/QA2
+  context: alpha/DEV
   replicas: 1
   port: 8080
   strategy : rolling
